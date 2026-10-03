@@ -30,17 +30,19 @@ public class Constants {
         c.backRightDirection.set(DcMotorSimple.Direction.FORWARD);
     });
 
+
     // Insert localization config here
     public static PinpointConfig localizerConfig = new PinpointConfig(c -> {
         c.name.set("Pinpoint");
         c.podType.set(GoBildaPinpointDriver.GoBildaOdometryPods.goBILDA_SWINGARM_POD);
-        c.xPodOffset.set(-7.588631337083231);
-        c.yPodOffset.set(1.6737365722656252);
+        c.xPodOffset.set(-6.647700512503076);
+        c.yPodOffset.set(0.10725346137219527);
         c.xPodDirection.set(GoBildaPinpointDriver.EncoderDirection.FORWARD);
         c.yPodDirection.set(GoBildaPinpointDriver.EncoderDirection.REVERSED);
         c.globalDistanceUnit.set(DistanceUnit.INCH);
         c.offsetUnits.set(DistanceUnit.INCH);
     });
+
 
     // Insert Foresignt config here
     public static ForesightConfig foresightConfig = new ForesightConfig(

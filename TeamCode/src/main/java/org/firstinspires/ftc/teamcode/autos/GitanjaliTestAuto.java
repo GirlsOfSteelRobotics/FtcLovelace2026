@@ -59,6 +59,8 @@ public class GitanjaliTestAuto extends OpMode {
     public void loop() {
         follower.update();
         Scheduler.execute();
-
+        telemetry.addData("x", follower.pose().x());
+        telemetry.addData("y", follower.pose().y());
+        telemetry.addData("heading", Math.toDegrees(follower.pose().heading()));
     }
 }
